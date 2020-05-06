@@ -1,19 +1,281 @@
 /* REGOLE GENERALI */
 body {
   font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
 }
-/* FINE REGOLE GENERALI */
 
+*::first-letter,
+span:first-of-type {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+.down_arrow::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f078';
+  font-weight: 900;
+  padding-left: 5px;
+  color: #031B4E;
+  cursor: pointer;
+}
+
+.ms_button a {
+  background-color: #fff;
+  color: #0069FF;
+  border: 1px solid #0069FF;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ms_first_color {
+  background-color: #0069FF;
+  color: #fff;
+}
+
+.ms_second_color {
+  background-color: #F3F5F9;
+}
+
+.ms_third_color {
+  background-color: #fff;
+}
+
+.ms_second_color h2,
+.ms_third_color h2,
+.ms_second_color h3,
+.ms_third_color h3 {
+  color: #000;
+}
+
+.ms_second_color p,
+.ms_third_color p {
+  color: rgba(3, 27, 78, 0.7);
+  font-size: 1.3em;
+}
+
+.ms_first_color,
+.ms_second_color,
+.ms_third_color {
+  padding: 5% 0;
+}
+
+.wrapper_90 {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+
+/* FINE REGOLE GENERALI */
 
 /* REGOLE HEADER */
 
+/* regole navbar */
+.ms_navbar {
+  height: 70px;
+  line-height: 70px;
+  text-transform: capitalize;
+  background-color: #fff;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+nav li:first-child {
+  padding-left: 0;
+}
+
+nav a {
+  color: #031B4E;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #0069FF;
+}
+
+nav .ms_button a:hover {
+  color: #fff;
+  background-color: #0069FF;
+}
+/* Fine regole navbar */
+
+/* Regole logo */
+.logo img {
+  width: 170px;
+}
+/* Fine regole logo */
+
+/* Regole burger menu */
+.burger_menu i {
+  font-size: 25px;
+  color: #0069FF;
+}
+/* Fine regole burger menu */
+
+/* Regole jumbotron */
+.jumbotron {
+  background-image: url('../img/bg-home-1-d54581d7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  margin-bottom: 0;
+  padding-top: 50px;
+}
+
+/* Regole teaser */
+.jumbotron .teaser_text {
+  color: #fff;
+  padding-right: 50px;
+}
+
+/* Regole form */
+.jumbotron .ms_box_form {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron .form_text h2 {
+  color: #000;
+  font-size: 25px;
+  line-height: 1.3em;
+}
+
+.jumbotron .form_text h2 span {
+  color: #0069FF;
+}
+
+.jumbotron .ms_form .ms_create,
+.jumbotron .ms_form .ms_button a {
+  display: block;
+  width: 100%;
+}
+
+.jumbotron .ms_form .ms_button a {
+  color: gray;
+}
+
+.jumbotron .ms_form .ms_button {
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.jumbotron .ms_form .ms_button img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
+}
+
+.jumbotron .ms_form .terms p {
+  font-size: 11px;
+}
+
+.jumbotron .ms_form .terms a {
+  text-decoration: underline;
+}
+
+/* Mediaquerys jumbotron */
+@media screen and (max-width: 991px) {
+  .jumbotron {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .jumbotron h1 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron p {
+    font-size: 1.5em;
+  }
+}
+/* Fine regole jumbotron */
+
 /* FINE REGOLE HEADER */
 
-/* REGOLE NAV */
-
-/* FINE REGOLE NAV */
-
 /* REGOLE MAIN */
+
+/* Inizio regole customers */
+section.customers.ms_second_color {
+  padding: 1% 0;
+}
+.customers .list_customers ul li {
+  width: calc(17% - 10px);
+}
+
+.customers .list_customers ul li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.customers .business_solution {
+  padding-bottom: 20px;
+}
+
+/* Mediaquerys customers */
+@media screen and (max-width: 991px) {
+  .title_customers h3 {
+    font-size: 1.2em;
+  }
+
+  .customers .list_customers ul li {
+    width: calc(50% - 10px);
+  }
+
+  .customers .list_customers ul li img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+/* Fine regole customers */
+
+/* Inizio regole deploy */
+
+.deploy_list li {
+  border-left: 2px solid lightgray;
+  padding: 10px;
+}
+
+.deploy_list li a {
+  color: rgba(3, 27, 78, 0.7);
+  font-size: 1.2em;
+}
+
+.info_option_text h3 {
+  font-size: 1.2em;
+}
+
+.info_option_text p {
+  font-size: .9em;
+  padding-bottom: 20px;
+}
+
+.info_option_text img {
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .deploy_list {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+/* Fine regole deploy */
 
 /* FINE REGOLE MAIN */
 
