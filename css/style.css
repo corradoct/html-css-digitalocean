@@ -549,3 +549,138 @@ footer h4 {
 
 }
 /* FINE REGOLE FOOTER */
+
+/* REGOLE HELP CHAT */
+
+.ms_help_chat {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+}
+
+.ms_no_padding {
+  padding-right: 0;
+}
+
+.ms_text_help_chat {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  position: relative;
+  width: 100%
+}
+
+.ms_text_help_chat p {
+  padding: 3px;
+}
+
+.fa-caret-right {
+  position: absolute;
+  top: 40%;
+  right: -2%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+}
+
+.ms_image_help_chat {
+  background-color: #006AFF;
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+}
+
+.ms_image_help_chat img {
+  max-width: 100%;
+}
+
+.ms_image_help_chat span {
+  color: #fff;
+  background-color: red;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 0 5px;
+  position: absolute;
+  top: -7px;
+  right: -12px;
+}
+
+/* Mediaquerys help chat */
+
+@media screen and (max-width: 348px) {
+  .ms_help_chat {
+    display: none;
+  }
+}
+@media screen and (min-width: 349px) and (max-width: 500px) {
+  .ms_image_help_chat {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .ms_image_help_chat img {
+    max-width: 100%;
+  }
+
+  .ms_text_help_chat {
+    width: 80%
+  }
+
+  .fa-caret-up {
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 991px) {
+  .ms_image_help_chat {
+    width: 10%;
+    margin-bottom: 20px;
+  }
+
+  .ms_image_help_chat img {
+    max-width: 100%;
+  }
+
+  .ms_text_help_chat {
+    width: 50%
+  }
+
+  .fa-caret-up {
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ms_image_help_chat {
+    width: 8%;
+    margin-bottom: 20px;
+  }
+
+  .ms_text_help_chat {
+    width: 30%
+  }
+
+  .fa-caret-up {
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+/* FINE REGOLE HELP CHAT */
