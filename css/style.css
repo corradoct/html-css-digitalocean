@@ -5,7 +5,8 @@ body {
 }
 
 *::first-letter,
-span:first-of-type {
+span:first-of-type,
+a:first-of-type {
   text-transform: capitalize;
 }
 
@@ -240,6 +241,12 @@ section.customers.ms_second_color {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .title_customers h3 {
+    font-size: 1.2em;
+  }
+}
+
 /* Fine regole customers */
 
 /* Inizio regole deploy */
@@ -268,6 +275,7 @@ section.customers.ms_second_color {
   height: auto;
 }
 
+/* Mediaquerys deploy */
 @media screen and (max-width: 991px) {
   .deploy_list {
     padding-left: 0;
@@ -276,6 +284,72 @@ section.customers.ms_second_color {
 }
 
 /* Fine regole deploy */
+
+/* Inizio regole developers */
+
+.developers_text p {
+  padding: 2% 0;
+}
+
+.carousel_arrow {
+  height: 360px;
+  position: relative;
+}
+
+.carousel_arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: 360px;
+}
+
+.fa-circle {
+  font-size: 10px;
+  cursor: pointer;
+  color: #0069FF;
+}
+
+.fa-circle.active {
+  background-color: #0069FF;
+  border-radius: 50%;
+}
+
+/* Mediaquerys developers */
+@media screen and (max-width: 991px) {
+  .carousel img {
+    max-width: 60%;
+    height: auto;
+    padding-top: 10%;
+  }
+
+  .carousel h4 {
+    font-size: 1em;
+    padding-bottom: 10%;
+  }
+}
+/* Fine regole developers */
+
+/* Inizio regole features */
+
+.features h2 {
+  padding-bottom: 3%;
+}
+
+/* Mediaquerys features */
+@media screen and (max-width: 991px) {
+  .features_image {
+    padding-top: 2%;
+  }
+}
+
+/* Fine regole features */
 
 /* FINE REGOLE MAIN */
 
