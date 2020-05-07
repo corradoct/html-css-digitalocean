@@ -32,7 +32,7 @@ ul {
 }
 
 .ms_first_color {
-  background-color: #0069FF;
+  background-image: linear-gradient(to right top, #00209B , #0069FF);
   color: #fff;
 }
 
@@ -67,6 +67,17 @@ ul {
   width: 90%;
   margin: 0 auto;
   padding-top: 3%;
+}
+
+.no_gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no_gutter > [class*="col-"],
+.no_gutter  [class*="ms_"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 
@@ -350,6 +361,64 @@ section.customers.ms_second_color {
 }
 
 /* Fine regole features */
+
+/* Inizio regole world-services */
+
+.ms_world_services li {
+  border-bottom: 1px solid #fff;
+  padding: 8px;
+}
+
+.ms_world_services li:last-child {
+  border-bottom: none;
+}
+
+.ms_prefix_city li {
+  text-transform: uppercase;
+}
+
+.ms_world_services li a {
+  color: #00acca;
+}
+
+/* Fine regole world-services */
+
+/* Inizio regole development teams */
+
+.ms_development_teams h2 {
+  padding-bottom: 5%;
+}
+.ms_development_teams .carousel {
+  position: relative;
+  height: 360px;
+  background-color: #fff;
+}
+
+.ms_team {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ms_team img {
+  max-width: 50%;
+  height: auto;
+  padding-bottom: 3%;
+}
+
+.ms_team a {
+  display: block;
+  color: #0069FF;
+  padding: 4%;
+}
+
+.circle {
+  padding-top: 5%;
+}
+
+/* Fine regole development teams */
 
 /* FINE REGOLE MAIN */
 
